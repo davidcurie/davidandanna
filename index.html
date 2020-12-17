@@ -43,49 +43,52 @@
       </div>
     </header>
 
-    <!-- Navbar (sticky on scroll) -->
-    <div id="navbar">
-      <div class="w3-bar w3-black w3-card" id="myNavbar">
-        <a href="index.html" style="width:25%" class="w3-bar-item w3-button">Home</a>
-        <!-- Right-sided navbar links -->
-        <div class="w3-center w3-hide-small">
-        <a href="details.html" style="width:25%" class="w3-bar-item w3-button">Details</a>
-        <a href="photos.html" style="width:25%" class="w3-bar-item w3-button">Photos</a>
-        <a href="registry.html" style="width:25%" class="w3-bar-item w3-button">Registry</a>
+    <div class="main-content">
+
+        <!-- Navbar (sticky on scroll) -->
+        <div class="sticky" id="navbar">
+          <div class="w3-bar w3-black w3-card" id="myNavbar">
+            <a href="index.html" style="width:25%" class="w3-bar-item w3-button">Home</a>
+            <!-- Right-sided navbar links -->
+            <div class="w3-center w3-hide-small">
+            <a href="details.html" style="width:25%" class="w3-bar-item w3-button">Details</a>
+            <a href="photos.html" style="width:25%" class="w3-bar-item w3-button">Photos</a>
+            <a href="registry.html" style="width:25%" class="w3-bar-item w3-button">Registry</a>
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
         </div>
-        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
-    </div>
-
-    <!-- Sidebar on small screens when clicking the menu icon -->
-    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-      <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-      <a href="details.html" onclick="w3_close()" class="w3-bar-item w3-button">Details</a>
-      <a href="photos.html" onclick="w3_close()" class="w3-bar-item w3-button">Photos</a>
-      <a href="registry.html" onclick="w3_close()" class="w3-bar-item w3-button">Registry</a>
-    </nav>
+        <!-- Sidebar on small screens when clicking the menu icon -->
+        <nav class="sticky w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+          <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+          <a href="details.html" onclick="w3_close()" class="w3-bar-item w3-button">Details</a>
+          <a href="photos.html" onclick="w3_close()" class="w3-bar-item w3-button">Photos</a>
+          <a href="registry.html" onclick="w3_close()" class="w3-bar-item w3-button">Registry</a>
+        </nav>
 
 
-    <!-- About / David and Anna -->
-    <div class="w3-container w3-padding-64 my-purple content" id="us">
-        <div class="w3-content">
-            <h1 class="w3-center w3-text-white"><b>We Eloped!</b></h1>
-            <img class="w3-round" src="images/couple.jpg" alt="Anna and David standing side-by-side at Lake Wenatchee, Washington" style="width:100%;margin:32px 0">
-            <p>In case you missed it, we held an intimate ceremony with our immediate family. Anna's father performed the ceremony, and her sister was our photographer. David's sister managed the social media feed for those that tuned in. Not a stranger in sight, but truly a sight to behold.</p>
-            <br>
-            <p class="w3-center"><a href="https://www.instagram.com/p/CIWq-CkiHLm/" class="w3-button my-pink w3-round w3-padding-large w3-large">Watch the video</a></p>
-            <br>
-            <p>If circumstances allow for small gatherings in 2021, we hope to host a few micro-weddings for you to celebrate with us in person.</p>
-            <br>
-            <p class="w3-center"><a href="details.html" class="w3-button my-pink w3-round w3-padding-large w3-large">Celebrate with us</a></p>
-            <br>
-        </div>
-    </div>
+        <!-- About / David and Anna -->
+        <div class="w3-container w3-padding-64 my-purple content" id="us">
+            <div class="w3-content">
+                <h1 class="w3-center w3-text-white"><b>We Eloped!</b></h1>
+                <img class="w3-round" src="images/couple.jpg" alt="Anna and David standing side-by-side at Lake Wenatchee, Washington" style="width:100%;margin:32px 0">
+                <p>In case you missed it, we held an intimate ceremony with our immediate family. Anna's father performed the ceremony, and her sister was our photographer. David's sister managed the social media feed for those that tuned in. Not a stranger in sight, but truly a sight to behold.</p>
+                <br>
+                <p class="w3-center"><a href="https://www.instagram.com/p/CIWq-CkiHLm/" class="w3-button my-pink w3-round w3-padding-large w3-large">Watch the video</a></p>
+                <br>
+                <p>If circumstances allow for small gatherings in 2021, we hope to host a few micro-weddings for you to celebrate with us in person.</p>
+                <br>
+                <p class="w3-center"><a href="details.html" class="w3-button my-pink w3-round w3-padding-large w3-large">Celebrate with us</a></p>
+                <br>
+            </div>
+        </div> <!-- End section -->
 
+    </div> <!-- End Main Content -->
 
     <!-- Footer -->
     <footer class="w3-row w3-center w3-black w3-padding-16">
@@ -99,7 +102,6 @@
     <div class="w3-hide-small" style="margin-bottom:32px"> </div>
 
     <script src="js/responsive-navbar.js" async></script>
-    <script src="js/sticky-navbar.js" async></script>
 
     </body>
 
