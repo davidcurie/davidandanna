@@ -1773,7 +1773,11 @@ a{
     border-color:#e7ffff!important 
 }
 
-/***** My additions *****/
+
+/********** MY ADDITIONS **********/
+
+
+
 .header {
   background-color: #f1f1f1;
   padding: 30px;
@@ -1795,22 +1799,10 @@ a{
   /* z-index: 0; */
 }
 
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.stickyNav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.stickySide {
-  position: fixed;
-  top: 0;
-  /* width: 40%; */
-}
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.stickyNav + .content {
-  padding-top: 100px;
+.alert {
+    background: #9e9e9e;
+    padding: 16px;
+    font-family: italic;
 }
 
 .sticky {
@@ -1821,9 +1813,10 @@ a{
     position: -ms-sticky;
     position: -o-sticky;
 }
-.my-purple{
+
+.my-brown{
   color: #fff;
-  background-color: rgb(33,15,31);
+  background-color: rgb(193,177,173);
 }
 
 .my-green{
@@ -1836,9 +1829,9 @@ a{
   background-color: rgb(167,149,152);
 }
 
-.my-brown{
+.my-purple{
   color: #fff;
-  background-color: rgb(193,177,173);
+  background-color: rgb(33,15,31);
 }
 
 .w3-display-uppermiddle{
