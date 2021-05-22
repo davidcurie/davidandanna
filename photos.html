@@ -58,7 +58,15 @@
         <h1 class="w3-center w3-text-white"><b>Photos</b></h1>
         <img class="w3-round" src="images/ceremony.jpg" alt="Anna and David exchange vows at Lake Wenatchee, Washington" style="width:100%;margin:32px 0">
         <p>Check back after your gathering to reminisce on your celebration.</p><br>
-        <p class="w3-center"><a href="" class="w3-button my-pink w3-round w3-padding-large w3-large">Coming Soon</a></p>
+        <div class="w3-center">
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="pwd" minlength="8">
+            <input type="button" value="Submit" onclick="validatePass()">
+        </div>
+        <p class="w3-center" id="elopement-link" style="display:none"><a href="index.html" class="w3-button my-pink w3-round w3-padding-large w3-large" >Elopement</a></p>
+        <p class="w3-center" id="nashville-link" style="display:none"><a href="index.html" class="w3-button my-pink w3-round w3-padding-large w3-large" >Arrington</a></p>
+        <p class="w3-center" id="family-link" style="display:none"><a href="index.html" class="w3-button my-pink w3-round w3-padding-large w3-large" >Family</a></p>
+        <p class="w3-center" id="chicago-link" style="display:none"><a href="index.html" class="w3-button my-pink w3-round w3-padding-large w3-large" >Chicago</a></p>
       </div>
     </section>
 
@@ -68,12 +76,34 @@
             <p>Created by David Curie using <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
         </div>
         <div class="w3-half">
-            <p>Updated May 08, 2021</p>
+            <p>Updated May 22, 2021</p>
         </div>
     </footer>
     <div class="w3-hide-small" style="margin-bottom:32px"> </div>
 
     <script src="js/responsive-navbar.js" async></script>
+    <script>
+        function validatePass(){
+            var password = document.getElementById('pwd').value;
+//            alert(password);
+            switch (password) {
+                case "Bavar1anH0tel":
+                    document.getElementById('elopement-link').style.display = "block";
+                    break;
+                case "M0Town21":
+                    document.getElementById('nashville-link').style.display = "block";
+                    break;
+                case "Sycaless":
+                    document.getElementById('family-link').style.display = "block";
+                    break;
+                case "chicago8":
+                    document.getElementById('chicago-link').style.display = "block";
+                    break;
+                default:
+                    alert('Invalid password');
+        };
+    }
+    </script>
 
     </body>
 
